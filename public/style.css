@@ -1,0 +1,162 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: sans-serif;
+}
+
+::-webkit-scrollbar
+{
+    width:4px;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: orangered;
+}
+
+body
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+}
+
+.chat_section
+{
+    width:50vw;
+    border:1px solid red;
+    flex-direction: column;
+    display: flex;
+
+}
+
+.chat_section .logo
+{
+    padding: 20px;
+    background-color: orangered;
+    color:white;
+
+
+}
+
+.chat_section .chat_area
+{
+    padding: 20px;
+    height: 50vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+
+.chat_section .chat_area .message
+{
+    padding: 20px;
+    margin-bottom: 5%;
+    max-width:60%;
+    word-wrap: break-word;
+    
+}
+
+.chat_section .chat_area .message img
+{
+    width:200px;
+}
+
+
+.chat_section .chat_area .outgoing
+{
+    float: right;
+    clear: both;
+}
+
+.chat_section .chat_area .incoming
+{
+    float: left;
+    clear: both;
+}
+
+.chat_section .chat_area .outgoing p,
+.chat_section .chat_area .incoming p
+{
+    background-color: rgb(235, 169, 153);
+    color:white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.chat_section .chat_area .incoming p
+{
+    background-color: rgb(255, 109, 72);
+}
+
+
+.chat_section .chat_area p
+{
+    margin-top: 5px;
+}
+
+.chat_section .send
+{
+    position: relative;
+    border-top: 1px solid orangered;
+
+}
+
+
+.chat_section .send input
+{
+    width:60%;
+    padding: 20px 30px;
+    border:none;
+    color:orangered
+}
+
+.chat_section .send input:focus
+{
+    border:none;
+    outline: none;
+
+}
+
+.chat_section .send .send_options
+{
+    position: absolute;
+    right:0;
+    top:-1px;
+    display: flex;
+}
+
+.chat_section .send .send_options button
+{
+    padding: 21px 30px;
+    border: none;
+    background-color: orangered;
+    color:white;
+    height: 100%;
+    cursor: pointer;
+}
+
+.chat_section .send .send_options img
+{
+    width:60px;
+    cursor: pointer;
+}
+
+
+.chat_area 
+{
+    position: relative;
+}
+.chat_area .default_text
+{
+    position: absolute;
+    left:40%;
+    top:50%;
+    transform: translateX(-50%,-50%);
+    color:rgba(0,0,0,.2);
+}

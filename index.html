@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conveyer</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+
+    <div class="chat_section">
+
+        <div class="logo">
+            CONVEYER
+        </div>
+
+        <div class="chat_area">
+            <p class="default_text">SEND MESSAGE</p>
+        </div>
+
+        <div class="send">
+            
+            <input type="text" id="message" placeholder="Send a message...">
+            <div class="send_options">
+                
+                <label for="myFile">
+                    <img src="/img/select_file.png" alt="file" class="uploaded_image">
+                </label>
+                <input type="file" name="file_uploaded" id="myFile" accept="image/*" hidden>
+
+                <button class="submit">send</button>
+            </div>
+
+        </div>
+
+    </div>
+
+ 
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+</html>
